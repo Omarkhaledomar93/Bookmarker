@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="main.css">
+    
+</head>
+<body class="testBody">
+    
+
+    <main class="d-flex justify-content-center flex-column w-75 mx-auto pt-3 mt-3">
+
+        <header>
+            <h1 class="text-center p-3 testH1" >
+              
+                
+               Bookmarker
+            </h1>
+           
+            
+            <h2 class="text-center p-3"><i class="fa-solid fa-bookmark"></i>
+            
+                Bookmark your favorite sites
+                <i class="fa-solid fa-bookmark"></i></h2>
+
+        </header>
+
+
+
+        <div class="mb-3 p-2">
+            <label for="formGroupExampleInput" class="form-label"><i class="fa-solid fa-book-bookmark pe-2"></i>Site Name</label>
+            <input oninput="validateName()" type="text" class="form-control" id="nameList" placeholder="Bookmark Name ">
+          </div>
+          <div class="mb-3">
+            <label  for="formGroupExampleInput2" class="form-label"><i class="fa-solid fa-link pe-2"></i>Site URL</label>
+            <input oninput="validateUrl()" type="url" class=" form-control" id="urlList" placeholder="Website URL">
+          </div>
+          
+         
+
+          <button onclick="addSite() "class="btn btn-danger w-25 mx-auto m-3">Submit</button>
+
+          <table class="table p-2 " >
+            <thead>
+                <tr>
+                    <th scope="col">Index</th>
+                    <th scope="col">Website Name </th>
+                    <th scope="col">Visit</th>
+                    <th scope="col">Delete</th>
+                  </tr>
+            </thead>
+            <tbody id="data">
+             
+              
+            </tbody>
+          </table>
+
+    </main>
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/main.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
